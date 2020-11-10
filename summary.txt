@@ -1,3 +1,78 @@
 
 Lab 2 summary
-Linux is the best
+
+2.1:
+pwd command works the same in both.
+
+ls command works the same in both besides file structure, but running LS yields different results.
+LS in Ubuntu tells you the command is not found, but gives you a command to
+install it while CentOS just tells you its not found.
+
+uname gives the same resuts.
+
+ls -a gives the same results besides the file structure.
+
+ls --all, ls -l, ls -r, ls -alr, and ls -a -l -r is almost the same story as ls -a.
+the ls commands that also list the permissions has the home directory
+in CentOS only acessable by the owner and in Ubuntu everyone else can read.
+
+uname -a is similar in both systems, Ubuntu is mentioned in the command output while in
+CentOS its name is no where to be seen.
+uname -s is the same.
+uname -n in CentOS gives 'localhost.localdomain' and Ubuntu just gives 'localhost'
+uname -m gives the same architecture result.
+uname -p and uname -i acts just like uname -m
+uname -o is the same in both.
+
+ls -rw 40 functionaly the same besides file structure.
+
+ls -wr 40 gives similar output. In Ubuntu the r is wrapped in single quotes and
+in CentOS the r is independent.
+
+ls –w 40 –I "T*" yields same result in both.
+
+ls --all –rl is the same in both.
+
+ls --color=never removes color in both the systems output.
+
+touch –d “1970-01-01 12:00:00” -- --badname does same thing.
+ls –-full-time -- --badname gave similar result, but in Ubuntu
+near the end was +0000 and in CentOS was -0500
+
+touch 1pickfile.txt and rm 1picfile.txt had the same result in both systems.
+
+cp /etc/hosts myhosts copies the file over in both systems.
+
+echo something new!!, echo "something new!!", and echo 'something new!!' all
+evaluated the same on both systems.
+
+alias l='ls -ar' and unalias l works the same in both systems.
+
+the ec [tab] bash feature works the same in both systems.
+
+doing ca [tab] does functionaly the same in both systems, but both have
+different commands starting with ca
+
+type pwd and type man have the same output in both systems.
+
+2.2:
+man ls brings up the man pages for both systems, but in CentOS there is color for some text.
+
+h gives the same help page, but again in CentOS there is color for some text.
+
+q quits the help page in both systems.
+
+another q brings us back to the terminal. One big difference is that in Ubuntu, the terminal is
+restored to where it was left of before the command was ran. In CentOS the terminal was not cleaned.
+
+man 5 passwd works in Ubuntu, but in CentOS there is no manual entry passwd in section 5.
+
+q to quit gives the same behavior as mentioned earlier.
+
+man -k passwd gives a different list in both systems, though some entries such as chgpasswd (8) are in both
+
+man -f passwd in Ubuntu gives three entries while in CentOS there is only sslpasswd (1ssl) and passwd (1)
+
+whatis passwd gives the same result as man -f passwd in both systems.
+
+man man gives the same man page in both systems.
